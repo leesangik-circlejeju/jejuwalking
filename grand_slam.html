@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국 걷기 그랜드 슬램 | 사단법인 제주특별자치도 건강걷기협회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: { primary: '#1F3D2B', accent: '#FF6B35' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; background-color: #FAFAFA; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="font-black text-xl text-primary tracking-tight">제주걷기여행</a>
+                <div class="hidden md:flex space-x-6 text-sm font-bold text-slate-600">
+                    <a href="jeju_walking.html" class="hover:text-primary transition">1. 제주 걷기 여행</a>
+                    <a href="association_intro.html" class="hover:text-primary transition">2. 법인소개</a>
+                    <a href="instructor_training.html" class="hover:text-primary transition">3. 걷기 지도자 양성</a>
+                    <a href="grand_slam.html" class="text-accent">4. 한국 걷기 그랜드 슬램</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero -->
+    <section class="relative py-24 bg-slate-900 text-white text-center">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=2000')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold text-black bg-accent rounded-sm transform -skew-x-12">대한민국 최고의 워커</span>
+            <h1 class="text-4xl md:text-5xl font-black mb-6">제주 워킹 그랑프리 대회 (250km)</h1>
+            <p class="text-lg md:text-xl text-slate-200 break-keep">제주 해안도로 일주 코스 5박 6일의 위대한 여정</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 flex-grow">
+        <article class="prose prose-slate lg:prose-xl mx-auto break-keep leading-relaxed text-slate-600 space-y-12">
+            
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 대회 개요</h2>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm text-sm space-y-2">
+                    <div><b>대회 기간:</b> 5박 6일 (매일 아침 06:00 출발 / 12시간 내 도착 원칙)</div>
+                    <div><b>코스:</b> 제주 해안도로 일주 코스 (총 연장 250km)</div>
+                    <div><b>참가비:</b> 2인 1실 (정회원 53만원 / 비회원 58만원)</div>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 구간별 거리 및 숙박 계획</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse border border-slate-200 text-sm">
+                        <thead class="bg-slate-100 font-bold text-slate-700">
+                            <tr>
+                                <th class="border p-2">구간/날짜</th>
+                                <th class="border p-2">세부 경로</th>
+                                <th class="border p-2">거리</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-600">
+                            <tr><td class="border p-2 font-bold text-center">1일차</td><td class="border p-2">심스호텔(건입동) 개회식</td><td class="border p-2 text-center">-</td></tr>
+                            <tr><td class="border p-2 font-bold text-center bg-slate-50">2일차</td><td class="border p-2 bg-slate-50">심스호텔 ➡️ 일성콘도(한림읍)</td><td class="border p-2 text-center bg-slate-50">46.5km</td></tr>
+                            <tr><td class="border p-2 font-bold text-center">3일차</td><td class="border p-2">일성콘도 ➡️ 일레인호텔(중문동)</td><td class="border p-2 text-center">55.5km</td></tr>
+                            <tr><td class="border p-2 font-bold text-center bg-slate-50">4일차</td><td class="border p-2 bg-slate-50">일레인호텔 ➡️ 리시온호텔(표선면)</td><td class="border p-2 text-center bg-slate-50">61.9km</td></tr>
+                            <tr><td class="border p-2 font-bold text-center">5일차</td><td class="border p-2">리시온호텔 ➡️ 오션그랜드호텔(조천)</td><td class="border p-2 text-center">61.3km</td></tr>
+                            <tr><td class="border p-2 font-bold text-center bg-slate-50">6일차</td><td class="border p-2 bg-slate-50">오션그랜드호텔 (폐회식)</td><td class="border p-2 text-center bg-slate-50">27.0km</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 안전 및 완보 특전</h2>
+                <ul class="list-disc list-inside space-y-1 text-sm pl-4">
+                    <li><b>완보 지급품:</b> 완보인증서, 완보텍, 완보메달</li>
+                    <li><b>안전 계획:</b> 자체 안전통제요원 상시 배치 및 준수사항 사전 교육</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <!-- Blog Link Button -->
+        <section class="mt-16 text-center">
+            <a href="https://blog.naver.com/jeju-walking/223904119246" target="_blank" class="inline-flex items-center gap-2 bg-[#2DB400] text-white font-bold px-8 py-4 rounded-full shadow-md hover:bg-[#279c00] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <span class="text-xl">📝</span> 네이버 블로그 원문 보기
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 사단법인 제주특별자치도 건강걷기협회. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주 걷기 여행 소개 | 사단법인 제주특별자치도 건강걷기협회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: { primary: '#1F3D2B', accent: '#FF6B35' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; background-color: #FAFAFA; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="font-black text-xl text-primary tracking-tight">제주걷기여행</a>
+                <div class="hidden md:flex space-x-6 text-sm font-bold text-slate-600">
+                    <a href="jeju_walking.html" class="text-accent">1. 제주 걷기 여행</a>
+                    <a href="association_intro.html" class="hover:text-primary transition">2. 법인소개</a>
+                    <a href="instructor_training.html" class="hover:text-primary transition">3. 걷기 지도자 양성</a>
+                    <a href="grand_slam.html" class="hover:text-primary transition">4. 한국 걷기 그랜드 슬램</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero -->
+    <section class="relative py-24 bg-primary text-white text-center">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-black mb-6">제주에서 걷기 스포츠를 즐기다</h1>
+            <p class="text-lg md:text-xl text-slate-200 break-keep">기암괴석, 푸른 바다, 한라산의 비경 - 걷기 스포츠 여행의 낙원</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16 flex-grow">
+        <article class="prose prose-slate lg:prose-xl mx-auto break-keep leading-relaxed text-slate-600 space-y-12">
+            
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 제주 걷기 여행 개요</h2>
+                <p class="text-sm">제주도는 화산 활동이 빚어낸 독특한 경관과 다양한 걷기 인프라로 전 세계 도보 여행객들의 사랑을 받고 있습니다.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 7대 대표 프로그램 운영 요약</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mt-4">
+                    <a href="program_1.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>1. 올레길 완주</b><br><span class="text-xs text-slate-500">핵심 코스 정복 (3박4일/7박8일)</span></a>
+                    <a href="program_2.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>2. 오름 & 힐링</b><br><span class="text-xs text-slate-500">피톤치드와 명상 치유</span></a>
+                    <a href="program_3.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>3. 해안 & 마을길</b><br><span class="text-xs text-slate-500">골목 인문학과 바다 힐링</span></a>
+                    <a href="program_4.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>4. 스페셜 테마</b><br><span class="text-xs text-slate-500">사계절 꽃길, 역사 & 신화 워크</span></a>
+                    <a href="program_5.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>5. 걷기 심화</b><br><span class="text-xs text-slate-500">250km 완주 대비 극한 트레일</span></a>
+                    <a href="program_6.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200"><b>6. 시즌별 한정판</b><br><span class="text-xs text-slate-500">억새, 눈꽃, 별빛 야간 걷기</span></a>
+                    <a href="program_7.html" class="block bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:border-primary hover:shadow-md transition duration-200 md:col-span-2"><b>7. 권역별 코스</b><br><span class="text-xs text-slate-500">동서남북 특화 데일리 플랜</span></a>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-black text-slate-900 border-l-4 border-primary pl-4">■ 안전한 스포츠 걷기를 위한 팁</h2>
+                <p class="text-sm">기능성 트레킹화 착용, 수분 및 에너지 섭취, 일몰 전 하산 원칙 준수, 쓰레기는 반드시 본인의 배낭에 되가져오세요.</p>
+            </section>
+
+        </article>
+
+        <!-- Blog Link Button -->
+        <section class="mt-16 text-center">
+            <a href="https://blog.naver.com/jeju-walking/223901790403" target="_blank" class="inline-flex items-center gap-2 bg-[#2DB400] text-white font-bold px-8 py-4 rounded-full shadow-md hover:bg-[#279c00] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <span class="text-xl">📝</span> 네이버 블로그 원문 보기
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 사단법인 제주특별자치도 건강걷기협회. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

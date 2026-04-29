@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주걷기여행 | 사단법인 제주특별자치도 건강걷기협회</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: { primary: '#1F3D2B', accent: '#FF6B35', darkBg: '#121212' },
+                    animation: { 
+                        'glow-pulse': 'glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards'
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(255, 107, 53, 0.6)' },
+                            '50%': { opacity: .7, boxShadow: '0 0 35px rgba(255, 107, 53, 1)' }
+                        },
+                        fadeIn: {
+                            from: { opacity: 0, transform: translateY(20px) },
+                            to: { opacity: 1, transform: translateY(0) }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; background-color: #F8FAFC; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="text-slate-800 antialiased pb-24 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200/50 fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="font-black text-xl text-primary tracking-tight">제주걷기여행</a>
+                <div class="hidden md:flex space-x-6 text-sm font-bold text-slate-600">
+                    <a href="jeju_walking.html" class="hover:text-primary transition">1. 제주 걷기 여행</a>
+                    <a href="association_intro.html" class="hover:text-primary transition">2. 법인소개</a>
+                    <a href="instructor_training.html" class="hover:text-primary transition">3. 걷기 지도자 양성</a>
+                    <a href="grand_slam.html" class="hover:text-primary transition">4. 한국 걷기 그랜드 슬램</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="relative h-screen min-h-[700px] flex items-center justify-center text-center px-4">
+        <!-- Background with parallax-like styling -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-primary/95"></div>
+        
+        <div class="relative z-10 max-w-5xl flex flex-col items-center animate-fade-in">
+            <span class="text-accent font-black text-sm md:text-base mb-6 tracking-[0.2em] uppercase bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20">
+                Healing & Challenge in Jeju
+            </span>
+            <h1 class="text-4xl md:text-7xl font-black text-white mb-8 leading-[1.25] drop-shadow-2xl break-keep">
+                제주걷기여행,<br>사단법인 제주특별자치도 건강걷기협회와 함께 하세요.
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-200 mb-12 max-w-3xl font-medium leading-relaxed break-keep">
+                일상의 모든 스트레스를 잊고, 자연과 깊이 교감하며 온전히 자신에게 집중하는 특별한 걷기를 선물합니다.
+            </p>
+            
+            <!-- Buttons removed as per user request -->
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/60 text-sm animate-bounce">
+            ▼ 스크롤하여 더 알아보기
+        </div>
+    </section>
+
+    <!-- 2. Trust & Philosophy (The Core Beliefs) -->
+    <section class="py-32 bg-white px-4 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center justify-center w-24 h-24 bg-primary/5 text-primary rounded-3xl mb-10 text-4xl shadow-inner rotate-3">🌿</div>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-10 leading-snug break-keep">
+                올바른 걷기 문화의 중심,<br>사단법인 제주특별자치도 건강걷기협회
+            </h2>
+            
+            <div class="bg-slate-900 text-slate-100 rounded-[32px] p-8 md:p-16 text-left shadow-2xl relative overflow-hidden mb-12">
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+                <h3 class="text-2xl font-black text-accent mb-6 flex items-center gap-3">
+                    <span>🚨</span> "암보다 무서운 병은 운동부족병입니다."
+                </h3>
+                <p class="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 break-keep">
+                    오늘날 눈부신 과학과 의학의 첨단화에도 불구하고 각종 현대병이 만연하는 이유는 단 하나, 바로 <b>걷기 운동의 부족</b> 때문입니다.
+                </p>
+                <div class="h-px bg-white/10 my-8"></div>
+                <p class="text-slate-300 text-lg md:text-xl leading-relaxed break-keep font-light">
+                    제주의 청정한 경치를 벗 삼아 걷는 것은 단순한 신체 활동을 넘어 <b>자연과 호흡하고 내면을 치유하는 가장 고귀한 여정</b>입니다. 우리는 바른 걷기 보급을 통해 모든 이들의 건강 수명을 늘리고 삶의 질을 혁신합니다.
+                </p>
+            </div>
+            
+            <p class="text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto break-keep">
+                (재)대한걷기연맹 산하 공식 지부로서, 이윤 추구가 목적이 아닌 <b>공인된 인프라</b>와 <b>전문 걷기지도자</b>들과 함께 가장 안전하고 힐링되는 걷기 솔루션을 제공합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. Tour Matrix (The 7 Themes & Funnel) -->
+    <section class="py-32 bg-slate-50 px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <span class="text-accent font-extrabold text-sm tracking-widest uppercase bg-accent/10 px-3 py-1 rounded">Product Showcase</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-4 text-slate-900">제주걷기여행 7대 핵심 테마</h2>
+            </div>
+
+            <!-- 7 Themes Pill Navigation -->
+            <div class="flex overflow-x-auto gap-3 pb-8 mb-16 hide-scrollbar px-4 lg:justify-center">
+                <a href="program_1.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">1. 올레길 완주</a>
+                <a href="program_2.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">2. 오름 & 힐링</a>
+                <a href="program_3.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">3. 해안 & 마을길</a>
+                <a href="program_4.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">4. 스페셜 테마</a>
+                <a href="program_5.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">5. 걷기 심화</a>
+                <a href="program_6.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">6. 시즌 한정</a>
+                <a href="program_7.html" class="shrink-0 px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-full text-sm font-medium hover:border-primary transition cursor-pointer hover:bg-slate-50">7. 지역별 코스</a>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex justify-center mb-16 border-b border-slate-200 max-w-2xl mx-auto">
+                <button onclick="switchTab('mass')" id="tab-mass" class="flex-1 py-5 font-black border-b-[3px] border-primary text-primary text-xl transition-all duration-300">매스 마켓</button>
+                <button onclick="switchTab('theme')" id="tab-theme" class="flex-1 py-5 font-bold border-b-[3px] border-transparent text-slate-400 hover:text-slate-800 text-xl transition-all duration-300">테마 & 한정판</button>
+                <button onclick="switchTab('premium')" id="tab-premium" class="flex-1 py-5 font-bold border-b-[3px] border-transparent text-slate-400 hover:text-slate-800 text-xl transition-all duration-300">프리미엄</button>
+            </div>
+
+            <!-- Tab Content: Mass Market -->
+            <div id="content-mass" class="tab-content active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <a href="program_2.html" class="block bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-slate-100 group">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-2xl text-xs font-black shadow-sm">공인 지도자 동행</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-4 text-slate-900">오름 크루 & 힐링 워크</h3>
+                        <p class="text-slate-500 text-base mb-8 font-normal leading-relaxed h-20 break-keep">사려니숲길 명상, 절물 맨발 걷기, 오름 파노라마 피크닉을 결합한 인생 사진 투어.</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-accent font-black text-3xl">30,000</span><span class="text-slate-700 font-bold">원 대</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="program_3.html" class="block bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-slate-100 group">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-2xl text-xs font-black shadow-sm">수하물 운반 지원</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-4 text-slate-900">해안 감성 걷기</h3>
+                        <p class="text-slate-500 text-base mb-8 font-normal leading-relaxed h-20 break-keep">애월/세화 해변 골목길 투어, 로컬 오일장 식도락 걷기로 MZ세대 취향 저격.</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-accent font-black text-3xl">50,000</span><span class="text-slate-700 font-bold">원 대</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="program_4.html" class="block bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-slate-100 group">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-6 left-6 bg-accent text-white px-4 py-2 rounded-2xl text-xs font-black shadow-sm">에코 가치 소비</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-4 text-slate-900">가족 어드벤처 플로깅</h3>
+                        <p class="text-slate-500 text-base mb-8 font-normal leading-relaxed h-20 break-keep">자연 보호와 놀이를 결합한 착한 걷기. 온 가족이 함께하는 건강한 발자국.</p>
+                        <div class="text-accent font-black text-xl">패키지 별도 문의</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tab Content: Theme -->
+            <div id="content-theme" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-12">
+                <a href="program_6.html" class="block bg-white rounded-[32px] overflow-hidden shadow hover:shadow-2xl transition-all duration-500 border border-slate-100 group">
+                    <div class="aspect-video relative overflow-hidden"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-4 text-slate-900">시즌별 한정판 워크</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed break-keep">유채꽃 흐드러진 봄, 한여름 밤의 달빛 걷기, 억새 물결치는 가을, 설경의 한라산까지 제주 사계절의 절정을 걷습니다.</p>
+                    </div>
+                </a>
+                <a href="program_4.html" class="block bg-white rounded-[32px] overflow-hidden shadow hover:shadow-2xl transition-all duration-500 border border-slate-100 group">
+                    <div class="aspect-video relative overflow-hidden"><img src="https://images.unsplash.com/photo-1516483638261-f40af5ebbded?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-4 text-slate-900">테마별 스페셜 워크</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed break-keep">사진 출사, 로컬 양조장 푸드 투어, 예술/건축 도슨트 워크 등 단순한 보행을 넘어 취향과 인문학을 결합한 워킹 여행.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tab Content: Premium -->
+            <div id="content-premium" class="tab-content grid grid-cols-1 md:grid-cols-3 gap-10">
+                <a href="program_1.html" class="block bg-white rounded-[32px] overflow-hidden shadow hover:shadow-2xl transition duration-500 group">
+                    <div class="aspect-[4/5] relative overflow-hidden"><img src="https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3 text-slate-900">올레길 완주 챌린지</h3>
+                        <p class="text-slate-500 text-base mb-4 leading-relaxed break-keep">도전(3박4일), 완주(7박8일) 코스. 올레 공식 패스포트 및 한정판 완주 기념 배지 증정.</p>
+                    </div>
+                </a>
+                <a href="program_5.html" class="block bg-white rounded-[32px] overflow-hidden shadow hover:shadow-2xl transition duration-500 group">
+                    <div class="aspect-[4/5] relative overflow-hidden"><img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3 text-slate-900">걷기 심화 코스</h3>
+                        <p class="text-slate-500 text-base mb-4 leading-relaxed break-keep">완전 종주 25일 코스, 100대 오름 정복 등 하드코어 워커들을 위한 장기 체류형 도전 상품.</p>
+                    </div>
+                </a>
+                <a href="program_6.html" class="block bg-white rounded-[32px] overflow-hidden shadow hover:shadow-2xl transition duration-500 group">
+                    <div class="aspect-[4/5] relative overflow-hidden"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3 text-slate-900">VVIP 프라이빗 힐링</h3>
+                        <p class="text-slate-500 text-base mb-4 leading-relaxed break-keep">전담 리무진 의전, 5성급 호텔 숙박, 파인 다이닝, 전문 포토그래퍼 동행 프리미엄 서비스.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Education (Curriculum from Blog Data) -->
+    <section class="py-32 bg-white px-4 relative">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+            <div class="w-full lg:w-1/2">
+                <span class="text-accent font-extrabold text-sm tracking-widest uppercase bg-accent/10 px-3 py-1 rounded">Official Certification</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-6 mb-8 leading-tight text-slate-900">제주 한 달 살기 필수 코스,<br>걷기지도자 자격증</h2>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed break-keep">
+                    KWF 대한걷기연맹 발급 민간자격(등록번호: 제2013-2275호). 국민들에게 올바른 걷기 방법을 교육하고 전파할 역량 있는 지도자를 양성합니다.
+                </p>
+                
+                <div class="flex gap-6 mb-12">
+                    <div class="flex-1 bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center">
+                        <div class="text-sm font-bold text-slate-500 mb-2">2급 자격 검정료</div>
+                        <div class="text-4xl font-black text-primary">50,000<span class="text-lg">원</span></div>
+                    </div>
+                    <div class="flex-1 bg-primary text-white rounded-2xl p-6 text-center shadow-xl shadow-primary/30">
+                        <div class="text-sm font-bold text-slate-300 mb-2">1급 자격 검정료</div>
+                        <div class="text-4xl font-black">200,000<span class="text-lg">원</span></div>
+                    </div>
+                </div>
+
+                <!-- Accordion Menu (Curriculum) -->
+                <div class="border border-slate-200 rounded-[24px] overflow-hidden shadow-sm bg-slate-50">
+                    <button class="w-full text-left px-8 py-6 font-bold text-slate-800 hover:bg-slate-100 flex justify-between items-center transition" onclick="toggleAcc('acc-1')">
+                        <span class="text-lg">주요 교육과목 구성</span>
+                        <span class="text-2xl text-slate-400">+</span>
+                    </button>
+                    <div id="acc-1" class="accordion-content bg-white text-slate-600">
+                        <ul class="py-6 px-8 space-y-3 text-base list-disc list-inside">
+                            <li>걷기 해부생리 및 메카니즘 이해</li>
+                            <li>질환별/다이어트 맞춤 걷기 방법</li>
+                            <li>걷기 자세 분석 및 교정학 실습</li>
+                            <li>걷기 명상법 및 심리적 이완 테크닉</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="w-full text-left px-8 py-6 font-bold text-slate-800 hover:bg-slate-100 flex justify-between items-center transition border-t border-slate-200" onclick="toggleAcc('acc-2')">
+                        <span class="text-lg">자격 취득 후 활동 영역</span>
+                        <span class="text-2xl text-slate-400">+</span>
+                    </button>
+                    <div id="acc-2" class="accordion-content bg-white text-slate-600">
+                        <ul class="py-6 px-8 space-y-3 text-base list-disc list-inside">
+                            <li>전국 기업, 단체, 학교 요청 시 전문 강사 파견</li>
+                            <li>지자체 건강증진 걷기교실 개설 및 운영</li>
+                            <li>걷기 동호회 코칭 및 기록 인증 감독</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="aspect-[4/3] rounded-[40px] overflow-hidden shadow-2xl rotate-1">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Challenge (Grand Prix details from Blog Data) -->
+    <section class="py-32 bg-darkBg text-white px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=2000')] bg-cover bg-center opacity-20"></div>
+        <div class="max-w-5xl mx-auto relative z-10 text-center">
+            <span class="inline-block px-6 py-2 mb-8 text-sm font-black text-black bg-[#FF6B35] rounded-sm transform -skew-x-12 uppercase tracking-widest">
+                Official Grand Prix
+            </span>
+            <h2 class="text-4xl md:text-7xl font-black mb-10 uppercase tracking-tight break-keep leading-tight">
+                우리 크루의 한계에 도전하라!<br><span class="text-[#FF6B35]">250km 제주 해안도로 릴레이</span>
+            </h2>
+            
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 md:p-14 mb-16 max-w-4xl mx-auto text-left shadow-2xl">
+                <p class="text-slate-300 text-lg md:text-xl mb-8 leading-relaxed break-keep font-light">
+                    제주해안도로 일주 코스 총 연장 250km 완보. 매일 아침 06:00 출발하여 하루 12시간 내에 구간 완보를 달성해야 하는 명예로운 도전입니다.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base text-slate-300 border-t border-white/10 pt-8">
+                    <div class="flex items-center gap-3">
+                        <span class="text-accent text-xl">📅</span> <b>대회 기간:</b> 5박 6일 페스티벌
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-accent text-xl">💰</span> <b>참가비:</b> 정회원 53만원 / 비회원 58만원
+                    </div>
+                    <div class="md:col-span-2 flex items-start gap-3 mt-2">
+                        <span class="text-accent text-xl">🏨</span> 
+                        <div>
+                            <b>숙소 라인업 (릴레이 코스):</b><br>
+                            <span class="text-slate-400 text-sm md:text-base">심스호텔 → 일성콘도 → 일레인호텔 → 리시온호텔 → 오션그랜드호텔</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-[#FF6B35]/50 hover:bg-white/10 transition-all duration-300 group cursor-pointer">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition duration-300">📜</div>
+                    <div class="font-black text-xl mb-2">공식 완보인증서</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-[#FF6B35]/50 hover:bg-white/10 transition-all duration-300 group cursor-pointer">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition duration-300">🏷️</div>
+                    <div class="font-black text-xl mb-2">특별 완보네임텍</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-[#FF6B35]/50 hover:bg-white/10 transition-all duration-300 group cursor-pointer">
+                    <div class="text-6xl mb-6 group-hover:scale-110 transition duration-300">🏅</div>
+                    <div class="font-black text-xl mb-2">한정판 주물 메달</div>
+                </div>
+            </div>
+            
+            <button class="bg-[#FF6B35] text-white font-black px-16 py-6 rounded-full text-xl md:text-2xl hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(255,107,53,0.4)]">
+                250km 릴레이 신청하기
+            </button>
+        </div>
+    </section>
+
+    <!-- Blog Link Button -->
+    <section class="py-12 bg-white text-center">
+        <a href="https://blog.naver.com/jeju-walking" target="_blank" class="inline-flex items-center gap-2 bg-[#2DB400] text-white font-bold px-8 py-4 rounded-full shadow-md hover:bg-[#279c00] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <span class="text-xl">📝</span> 네이버 블로그 원문 보기
+        </a>
+    </section>
+
+    <!-- Floating Sticky Action Bar (Fixed bottom right) -->
+    <div class="fixed bottom-6 right-4 md:right-8 z-50 flex items-center gap-3">
+        <!-- 1. Auto Travel Generator -->
+        <a href="https://script.google.com/macros/s/AKfycbyujDz10HAfFEPhUWHrLU5P5KnVm73zyQocX_5_SstRjuRme6MAWq8zyyBxgge9MLUR/exec" target="_blank" 
+           class="flex items-center justify-center gap-3 bg-[#FF8A5C] text-white font-black px-6 py-4 rounded-full shadow-2xl hover:scale-110 hover:-translate-y-1 transition-all duration-300 animate-glow-pulse">
+            <span class="text-xl">🗺️</span>
+            <span class="text-sm md:text-base font-extrabold tracking-wide">자동여행지 생성</span>
+        </a>
+        <!-- 2. Kakao Talk Button -->
+        <a href="#" class="flex items-center justify-center gap-3 bg-[#FEE500] text-[#191919] font-black px-6 py-4 rounded-full shadow-2xl hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+            <span class="text-2xl">💬</span>
+            <span class="text-sm md:text-base font-extrabold tracking-wide">카톡 상담하기</span>
+        </a>
+    </div>
+
+    <!-- JS Scripts for Tab & Accordion -->
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('button[id^="tab-"]').forEach(el => {
+                el.classList.remove('border-primary', 'text-primary', 'font-black');
+                el.classList.add('border-transparent', 'text-slate-400', 'font-bold');
+            });
+            document.getElementById('content-' + tabId).classList.add('active');
+            const activeTab = document.getElementById('tab-' + tabId);
+            activeTab.classList.remove('border-transparent', 'text-slate-400', 'font-bold');
+            activeTab.classList.add('border-primary', 'text-primary', 'font-black');
+        }
+
+        function toggleAcc(id) {
+            const el = document.getElementById(id);
+            const isCurrentlyOpen = el.style.maxHeight;
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                content.style.maxHeight = null;
+                content.previousElementSibling.querySelector('span').textContent = '+';
+            });
+            if (!isCurrentlyOpen) {
+                el.style.maxHeight = el.scrollHeight + "px";
+                el.previousElementSibling.querySelector('span').textContent = '-';
+            }
+        }
+    </script>
+</body>
+</html>
